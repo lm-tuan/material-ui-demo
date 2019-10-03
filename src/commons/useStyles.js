@@ -1,7 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-
-const useStyleSigup = makeStyles(theme => ({
+const useStyles = makeStyles(theme => ({
     '@global': {
       body: {
         backgroundColor: theme.palette.common.white,
@@ -18,13 +17,12 @@ const useStyleSigup = makeStyles(theme => ({
       backgroundColor: theme.palette.secondary.main,
     },
     form: {
-      width: '100%', // Fix IE 11 issue.
-      marginTop: theme.spacing(3),
+      width: '100%', 
+      marginTop: theme.spacing(1),
     },
     submit: {
       margin: theme.spacing(3, 0, 2),
     },
   }));
 
-export default useStyleSigup;
-
+export default useStyles;

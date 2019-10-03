@@ -8,5 +8,4 @@ import Sigup from './../components/Sigup';
         </div>
     )
 }
-
 export default resginterPage;

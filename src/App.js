@@ -1,9 +1,9 @@
 import React from 'react';
 import routes from './routes/index';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import './App.css';
-import Sigin from './components/Sigin';
+
 
 const ShowContet = routes => {
   let result = null;
@@ -27,7 +27,6 @@ function App() {
     <Router>
       <div className="App">
         { ShowContet(routes) }
-          {/* <Sigin/> */}
       </div>
     </Router>
   );
