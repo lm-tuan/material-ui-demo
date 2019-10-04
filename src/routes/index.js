@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginPage from './../pages/loginPage';
+import LoginPage from './../components/Sigin';
 import ResginterPage from './../pages/resginterPage';
 import HomePage from './../pages/homePage';
 import ForgotPassword from './../pages/forgotPassword';

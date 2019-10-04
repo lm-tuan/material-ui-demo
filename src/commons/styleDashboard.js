@@ -1,7 +1,6 @@
-import { makeStyles ,fade} from '@material-ui/core/styles';
+
 import {DRAWERWIDTH} from './../contants/styleContant';
-
-
+import { makeStyles ,fade} from '@material-ui/core/styles';
 const drawerWidth = DRAWERWIDTH;
 const useStyleDashboard = makeStyles(theme => ({
     root: {
