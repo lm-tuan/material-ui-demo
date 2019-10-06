@@ -10,7 +10,6 @@ import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-import * as Yup from "yup";
 import { connect } from 'react-redux';
 import * as actions from './../actions';
 import { withStyles } from '@material-ui/core/styles';
@@ -36,11 +35,10 @@ class Sigin extends Component {
   static getDerivedStateFromProps(props, state) {
     if(localStorage.getItem('token')){
       props.history.push('/');
-      return;
+      return ;
     }
-    console.log('props',props)
-    console.log('state',state)
-    return undefined;
+    
+    return null;
   }
   shouldComponentUpdate(nextProps, nextState){
     if(nextProps.auth.token){
@@ -48,14 +46,11 @@ class Sigin extends Component {
       return false;
     }
     return true;
-    console.log('nextProps',nextProps);
-    console.log('nextState',nextState);
+
   }
 
   render() {
-    console.log('render');
     const classes = this.props;
-    console.log(this.props.auth);
     return (
       <Formik
         enableReinitialize

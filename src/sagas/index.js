@@ -1,5 +1,5 @@
-import * as action from './../actions';
-import { fork, put, takeLatest, delay } from "redux-saga/effects";
+
+import { fork, put, takeLatest } from "redux-saga/effects";
 import * as types from './../contants/typeAction';
 import { usersApi } from './../ultils/usersApi';
 import * as actions from './../actions';
@@ -17,7 +17,6 @@ function* registerUser(action) {
 
 function * authorize(action){
   try {
-    console.log(action.user);
     const res = yield usersApi.authorize(action.user);
     var token = res.data.token;
     yield put(actions.loginSuccess());

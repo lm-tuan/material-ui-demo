@@ -4,7 +4,7 @@ const initalState = {
   userRegister:null,
   registered:false
 } 
-export function registration(state = {}, action) {
+export function registration(state = initalState, action) {
     switch (action.type) {
       case types.REGISTER_REQUEST:
         console.log(action);

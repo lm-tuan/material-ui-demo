@@ -1,5 +1,5 @@
 
-import { makeStyles ,fade} from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 const styleSearch = makeStyles(theme => ({
     root: {

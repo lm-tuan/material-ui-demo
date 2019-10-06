@@ -1,8 +1,8 @@
 
 import {DRAWERWIDTH} from './../contants/styleContant';
-import { makeStyles ,fade} from '@material-ui/core/styles';
+import {fade} from '@material-ui/core/styles';
 const drawerWidth = DRAWERWIDTH;
-const useStyleDashboard = makeStyles(theme => ({
+const useStyleDashboard = (theme => ({
     root: {
       display: 'flex',
     },
